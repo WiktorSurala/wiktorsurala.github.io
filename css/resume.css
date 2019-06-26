@@ -247,3 +247,11 @@ a:hover, a:focus, a:active {
 .accordion_element{
     padding-left: 10px
 }
+
+.gamepad-color{
+    color: #1E90FF;
+}
+
+.bitcoin-color{
+    color: #ff9900;
+}
