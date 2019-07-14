@@ -17,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-
+    <!--<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">-->
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
 
@@ -56,14 +56,22 @@
             <li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="#certificates">Zertifikate</a>
             </li>
+            <li class="nav-item pdfButton">
+                <button class="btn-danger" type="button" onclick="printAsPDF()"><a
+                        class="nav-link js-scroll-trigger" href="#download">PDF-Download</a></button>
+            </li>
         </ul>
     </div>
-</nav>
 
+
+</nav>
 <div class="container-fluid p-0">
 
     <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
         <div class="w-100">
+            <div class="">
+                <img class="img-fluid img-profile rounded-circle mx-auto mb-2 pdfPicture" src="img/profile.jpg" alt="">
+            </div>
             <h1 class="mb-0">Wiktor
                 <span class="text-primary">Surala</span>
             </h1>
@@ -96,14 +104,14 @@
                     <p>Mehrere Hybris Schulungen und die Zusammenarbeit mit Senior Entwicklern haben bei mir die
                         Grundbausteine gelegt für ein fundiertes Hybris SAP wissen rund um das Produkt und um die
                         Entwicklung.</p>
-                    <p>Im Laufe meines beruflichen Werdegangs habe ich meine Fähigkeiten ausgebaut durch selbstständiges
+                    <p>Im Laufe meines beruflichen Werdegangs habe ich meine Fähigkeiten ausgebaut durch
+                        selbstständiges
                         und fokussiertes Arbeiten.</p>
                     <p>In Scaling Scrum mit Nexus bearbeite ich gemeinsam in einem Team aus externen und internen
                         Kollegen täglich Stories und erfülle dabei
                         Kundenanforderungen und Wünsche rund um das Kern System von Hybris. </p>
-                    <p>In meiner Arbeit beschäftige ich mich nicht nur mit der Beratung von Business Analysten und dem
-                        Umsetzen von Stories, sondern arbeite auch
-                        zusammen mit DevOps an Aufgaben rund um Apache Ant, Maven und Docker.</p>
+                    <p>In meiner Arbeit beschäftige ich mich nicht nur mit der Beratung von Business Analysten und
+                        dem Umsetzen von Stories, sondern arbeite auch zusammen mit DevOps an Aufgaben rund um Apache Ant, Maven und Docker.</p>
                 </div>
                 <div class="resume-date text-md-right">
                     <span class="text-primary">April 2018 - Heute</span>
@@ -123,10 +131,11 @@
                         den Projektleiter zu beraten, was die beste Lösung sei und wie man am schnellsten und
                         effizientesten die Kundenbedürfnisse erfüllen kann.</p>
                     <p>Mein Augenmerk war dabei stets, dass die implementierte Lösung nicht nur funktionierte,
-                        sondern auch dass eine Erweiterbarkeit sichergestellt wurde und auch für den nächsten Entwickler
+                        sondern auch dass eine Erweiterbarkeit sichergestellt wurde und auch für den nächsten
+                        Entwickler
                         leicht lesbar und verständlich war.</p>
-                    <p>Auch außerhalb von C/AL konnte ich von meinen Kenntnissen überzeugen indem ich Software für
-                        Handscanner entwickelt habe und den Kunden bei der Einführung beraten habe.</p>
+                    <p>Zudem habe ich Software für
+                        Handscanner entwickelt habe und den Kunden bei der Einführung beraten.</p>
 
                 </div>
                 <div class="resume-date text-md-right">
@@ -138,11 +147,14 @@
                 <div class="resume-content">
                     <h3 class="mb-0">Auszubildender Fachinformatiker für Anwendungsentwicklung</h3>
                     <div class="subheading mb-3">KUMAvision AG</div>
-                    <p>In der KUMAvision hatte ich zum ersten Mal Kontakt mit der Programmierung und Microsoft Dynamics
+                    <p>In der KUMAvision hatte ich zum ersten Mal Kontakt mit der Programmierung und Microsoft
+                        Dynamics
                         NAV.</p>
-                    <p>Hier konnte ich erste Erfahrung sammeln mit C/AL und C# und habe am Münchner Standort geholfen
+                    <p>Hier konnte ich erste Erfahrung sammeln mit C/AL und C# und habe am Münchner Standort
+                        geholfen
                         Tools innerhalb von NAV zu entwicklen auf Grundlage von
-                        bereits bestehenden Funktionalitäten vom Object Manager Advanced, aber auch Dataports, XMLPorts
+                        bereits bestehenden Funktionalitäten vom Object Manager Advanced, aber auch Dataports,
+                        XMLPorts
                         und Codeunits welche zum Export und Import von Daten benutzt wurden.</p>
                 </div>
                 <div class="resume-date text-md-right">
@@ -289,14 +301,16 @@
                     </div>
                 </li>
                 <li>
-                    <button class="accordion fa-li"><span class="accordion_element">NAV Systeme updaten</span></button>
+                    <button class="accordion fa-li"><span class="accordion_element">NAV Systeme updaten</span>
+                    </button>
                     <div class="panel">
                         <p>Update von Kundendatenbanken und dessen NAV Versionen (bis NAV2018)</p>
                         <p>Geringste Version die ich je geupdated habe: NAV3.0</p>
                     </div>
                 </li>
                 <li>
-                    <button class="accordion fa-li"><span class="accordion_element">Forms &amp; Pages designen</span>
+                    <button class="accordion fa-li"><span
+                            class="accordion_element">Forms &amp; Pages designen</span>
                     </button>
                     <div class="panel">
                         <p>Felder eingebaut</p>
@@ -321,7 +335,7 @@
                         <p>Allgemeine Konfiguration von NAV Services (z.B. Ports, User Zugriff)</p>
                     </div>
                 </li>
-                <li>
+                <li class="page-break">
                     <button class="accordion fa-li"><span class="accordion_element">Object Manager Advanced</span>
                     </button>
                     <div class="panel">
@@ -368,7 +382,7 @@
                 </li>
             </ul>
             <br>
-            <div class="subheading mb-3">SAP Hybris</div>
+            <div class="subheading mb-3 page-break">SAP Hybris</div>
             <ul class="fa-ul mb-0">
                 <li>
                     <button class="accordion fa-li"><span class="accordion_element">Backend Development in Java mit Apache Ant &amp; Maven</span>
@@ -389,7 +403,8 @@
                     </div>
                 </li>
                 <li>
-                    <button class="accordion fa-li"><span class="accordion_element">Frontend Development in JSP</span>
+                    <button class="accordion fa-li"><span
+                            class="accordion_element">Frontend Development in JSP</span>
                     </button>
                     <div class="panel">
                         <p>Layout für Komponenten erstellt</p>
@@ -425,9 +440,12 @@
 
                     <button class="accordion fa-li"><span class="accordion_element">AngularJS</span></button>
                     <div class="panel">
-                        <p>Aktive Hilfestellung geleistet für meine Schwester beim Lösen von Aufgaben für ihr Wirtschaftsinformatikstudium</p>
+                        <p>Aktive Hilfestellung geleistet für meine Schwester beim Lösen von Aufgaben für ihr
+                            Wirtschaftsinformatikstudium</p>
                         <p>Komponenten erstellt über AngularCLI</p>
-                        <p>Integration von GraphQL und Apollo in Beispielshop für die Kommunikation zwischen Client und Server</p>
+                        <p>Integration von GraphQL und Apollo in Beispielshop für die Kommunikation zwischen Client
+                            und
+                            Server</p>
                     </div>
                 </li>
 
@@ -455,7 +473,8 @@
                 </li>
                 <li>
 
-                    <button class="accordion fa-li"><span class="accordion_element">Hybris Administration Console</span>
+                    <button class="accordion fa-li"><span
+                            class="accordion_element">Hybris Administration Console</span>
                     </button>
                     <div class="panel">
                         <p>Initialisierung / Update der Datenbank</p>
@@ -463,7 +482,7 @@
                         <p>Prüfung von Daten über Flexible Search</p>
                     </div>
                 </li>
-                <li>
+                <li class="page-break">
                     <button class="accordion fa-li"><span class="accordion_element">Impex</span></button>
                     <div class="panel">
                         <p>Erstellung von Komponenten Instanzen</p>
@@ -635,8 +654,14 @@
 <!-- Plugin JavaScript -->
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-<!-- Custom scripts for this template -->
+
+<!-- Custom script-->
+
+<!-- General -->
 <script src="js/resume.min.js"></script>
+
+<!-- PDF -->
+<script src="js/pdf.js"></script>
 
 </body>
 
