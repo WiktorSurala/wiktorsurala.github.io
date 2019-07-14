@@ -20,3 +20,31 @@
     window.onbeforeprint = beforePrint;
     window.onafterprint = afterPrint;
 }());
+
+function printAsPDF() {
+
+    // Closes Accordion element
+    //var activeElements = document.getElementsByClassName("active");
+    //Array.prototype.forEach.call(activeElements,function(element) {
+    //    element.click();
+    //});
+
+    // Opens every Accordion Element
+    var accordionElements = document.getElementsByClassName("accordion");
+    Array.prototype.forEach.call(accordionElements,function(element) {
+        if (!element.classList.contains("active")){
+            element.click();
+        }
+    });
+
+    // Print Document
+    window.print();
+
+    // Closes every Accoridion Element
+    Array.prototype.forEach.call(accordionElements,function(element) {
+            element.click();
+    });
+
+    return false;
+}
+

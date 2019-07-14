@@ -70,7 +70,7 @@ function modules() {
 // CSS task
 function css() {
   return gulp
-    .src("./css/**/*.css")
+    .src(["./css/*.css","!./css/*min.css"])
     .pipe(gulp.dest("./css"))
     .pipe(rename({
       suffix: ".min"

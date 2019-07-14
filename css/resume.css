@@ -262,6 +262,34 @@ p {
 }
 
 .pdfPicture {
-    float: right;
-    max-height:150px;
+    float: left;
+    max-width: 15rem;
+    display:none;
+}
+
+.pdfButton{
+    padding-top: 1rem;
+}
+
+@media print {
+    html, body {
+        width: 210mm;
+        height: 297mm;
+    }
+
+    .pdfPicture {
+        display: block;
+        float: left;
+        max-width: 15rem;
+        padding-right: 1rem;
+    }
+
+    .social-icons{
+        float: right;
+    }
+
+    .page-break{
+        margin-top: 6rem;
+        page-break-before: always;
+    }
 }
