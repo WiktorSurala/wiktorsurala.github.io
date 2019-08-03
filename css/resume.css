@@ -310,29 +310,3 @@ p {
     height: 10rem;
 }
 
-div.first-skill {
-    background-image: url(../img/dynamics-nav-logo-mobile.png);
-}
-
-@media (min-width: 768px) {
-    div.first-skill {
-        background-image: url(../img/dynamics_nav.png);
-        background-size: auto;
-    }
-}
-
-div.second-skill {
-    background-image: url(../img/java.png);
-
-}
-
-div.third-skill {
-    background-image: url(../img/frontend-mobile.png);
-}
-
-@media (min-width: 768px) {
-    div.third-skill {
-        background-image: url(../img/frontend.png);
-        background-size: 15rem;
-    }
-}
